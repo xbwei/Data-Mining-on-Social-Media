@@ -55,12 +55,13 @@ FieldList = ["CheckTime","TeetID","Text","Lat","Lon","TeetTime","UserID","UserNa
 
 '''
 OAUTH
+fill your info
 '''
 
-CONSUMER_KEY = "npAqfYBdlncgg9q1Sf9rNQ"
-CONSUMER_SECRET = "YWs6TumZWagp4ch40EcNPk47DqyToV5gSFn2yRWpgw"
-OAUTH_TOKEN = "60388598-GuknI3yfwt9OLKA9KwveUyJL4aUXWZfpGpI2bsVRs"
-OATH_TOKEN_SECRET = "umjzGanoh7F9jG9bp5AjwwYZFGkxiKjvF3uzV3DHqZT23"
+CONSUMER_KEY = ""
+CONSUMER_SECRET = ""
+OAUTH_TOKEN = ""
+OATH_TOKEN_SECRET = ""
 
 auth = twitter.oauth.OAuth(OAUTH_TOKEN,OATH_TOKEN_SECRET,CONSUMER_KEY,CONSUMER_SECRET)
 twitter_api = twitter.Twitter(auth=auth)
