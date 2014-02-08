@@ -4,6 +4,8 @@ Created on Nov 19, 2013
 @author: Xuebin Wei
 
 weixuebin@gmail.com
+
+Department of Geography, UGA
 '''
 
 '''
