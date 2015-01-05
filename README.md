@@ -1,5 +1,5 @@
 <h1>Get Tweet and Facebook Posts</h1>
-==========
+
 <ol>
 <li><dbf> create dbf table for storing collected tweets</li>
 <li><Twitter> get tweets by defined query or specific users, and store collected tweets in dbf table or postgre sql database</li>
