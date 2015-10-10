@@ -8,7 +8,7 @@
 
 <li>StreamAPI gets tweets from specific locations by using StreamAPI and store collected tweets in  postgre sql database. Extract geo-tagged locations, mentioned users, retweeted users and replying users into separate fields</li>
 
-<li>Retrivehistroictweetid extracts historic tweet id of specific users by sending request to twitter search website</li>
+<li>ExtractHistroicTweetid extracts historic tweet id of specific users by sending request to twitter search website</li>
 
 </ul>
 An visualization tool is provided at https://github.com/xbwei/Visualization-for-Geo-Twitter-Data
