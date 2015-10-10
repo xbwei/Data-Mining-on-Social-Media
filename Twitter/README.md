@@ -1,14 +1,14 @@
 <h1>Get Tweets</h1>
 
 <ul>
-<li>GenerateDFBTable create dbf table for storing collected tweets</li>
-<li>GetTweetByQuery get tweets by defined query and store collected tweets in dbf table.</li>
+<li>GenerateDFBTable creates dbf table for storing collected tweets</li>
+<li>GetTweetByQuery gets tweets by defined query and store collected tweets in dbf table.</li>
 
-<li>GetTWeetByUSer get tweets from specific and store collected tweets in  postgre sql database. Extract geo-tagged locations, mentioned users, retweeted users and replying users into separate fields</li>
+<li>GetTWeetByUSer gets tweets from specific and store collected tweets in  postgre sql database. Extract geo-tagged locations, mentioned users, retweeted users and replying users into separate fields</li>
 
-<li>StreamAPI get tweets from specific locations by using StreamAPI and store collected tweets in  postgre sql database. Extract geo-tagged locations, mentioned users, retweeted users and replying users into separate fields</li>
+<li>StreamAPI gets tweets from specific locations by using StreamAPI and store collected tweets in  postgre sql database. Extract geo-tagged locations, mentioned users, retweeted users and replying users into separate fields</li>
 
-<li>Retrive histroic tweet id extract historic tweet id of specific users by sending request to twitter search website</li>
+<li>Retrivehistroictweetid extracts historic tweet id of specific users by sending request to twitter search website</li>
 
 </ul>
 An visualization tool is provided at https://github.com/xbwei/Visualization-for-Geo-Twitter-Data
