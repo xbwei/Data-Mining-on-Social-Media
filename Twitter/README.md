@@ -10,7 +10,7 @@
 
 <li>ExtractHistroicTweetid extracts historic tweet id of specific users by sending request to twitter search website</li>
 
-<li>GetTwitter2CSV extract tweets by using since id and max id, and store the extracted tweets into a csv file</li>
+<li>GetTwitter2CSV maximizes API usage tweets by using since_id and max_id, and store the extracted tweets into a csv file</li>
 
 </ul>
 An visualization tool is provided at https://github.com/xbwei/Visualization-for-Geo-Twitter-Data
