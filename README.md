@@ -1,4 +1,4 @@
-<h1>Get Tweet and Facebook Posts</h1>
+<h1>Extract Social Media Data from Twitter and Facebook</h1>
 
 <ul>
 
