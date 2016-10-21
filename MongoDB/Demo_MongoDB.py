@@ -7,7 +7,8 @@ Created on Oct 18, 2016
 import pymongo
 from pymongo import MongoClient
 
-import urllib2
+import urllib
+from urllib import request
 import json
 
 
@@ -17,18 +18,23 @@ db = client.db_demo
 
 collection_demo  = db.collection_demo 
 
-'''
+
 # insert data
 
 url_str = 'https://graph.facebook.com/http://www.jmu.edu'
 
-response = urllib2.urlopen(url_str)
+response = request.urlopen(url_str)
 
-json_data= json.load(response)
-# print json_data
+html_str = response.read().decode("utf-8") 
 
+
+json_data = json.loads(html_str)
 collection_demo.insert(json_data)
-'''
+
+cursor = collection_demo.find()
+ 
+for document in cursor:
+    print (document)
 
 ''' 
 # query data
