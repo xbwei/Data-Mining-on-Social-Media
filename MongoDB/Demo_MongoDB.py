@@ -37,8 +37,18 @@ for document in cursor:
     print (document)
 
 ''' 
-# query data
+# sort data
 cursor = collection_demo.find().sort("share.share_count", pymongo.DESCENDING)
+                                     
+ 
+for document in cursor:
+    print (document)
+
+'''
+
+''' 
+# query data
+cursor = collection_demo.find({"share.share_count":{"$gt":5000}})
                                      
  
 for document in cursor:
