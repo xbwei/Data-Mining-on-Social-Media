@@ -74,7 +74,7 @@ for  li in soup.find_all("li", attrs = {"data-item-type":"tweet"}):
         print ('***error in inserting user name')
         pass
 
-    sql_insert_tweet_statement ="""insert into tweet (TweetID, TweetText, UserID,TeetTime) values (%s,%s,%s,%s)"""\
+    sql_insert_tweet_statement ="""insert into tweet (TweetID, TweetText, UserID,TweetTime) values (%s,%s,%s,%s)"""\
                             %(tweet_id, "'"+ tweet_text+"'",user_id,"'"+ tweet_time+"'") 
     
                             
