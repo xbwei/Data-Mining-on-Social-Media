@@ -14,7 +14,7 @@ conn = pyodbc.connect(odbc_conn_str) # establish a database connection
 
 cursor = conn.cursor() # create a cursor
 
-sql_select_statement = '' # edit the SQL statement that want to execute
+sql_select_statement = '' # edit the SQL statement that you want to execute
 
 cursor.execute(sql_select_statement) # execute the SQL statement
 
