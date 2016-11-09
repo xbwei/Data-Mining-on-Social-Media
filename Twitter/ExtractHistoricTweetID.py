@@ -204,7 +204,7 @@ def GetTweetIDByName(name,start,end):
    '''
     insert tweet into postgresql table
     '''
-    connection = psycopg2.connect(dbname = 'Nanyang', user = 'postgres',password='232402')
+    connection = psycopg2.connect(dbname = '', user = '',password='')
     cursor = connection.cursor()
     try:
         for statue in search_results:
