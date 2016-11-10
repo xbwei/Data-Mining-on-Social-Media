@@ -1,9 +1,3 @@
-'''
-Created on Sep 5, 2016
-
-@author: xuebin wei
-website: www.lbsocial.net 
-'''
 import pyodbc  # using the pyodbc library 
 
 db_file = '' #define the location of your Access file
@@ -20,8 +14,13 @@ cursor.execute(sql_select_statement) # execute the SQL statement
 
 results = cursor.fetchall() # get the returned results
 for row in results:
+    print ('-----')
     for cell in row:
-        print (cell)
+        try:
+            print (cell)
+        except:
+            print ('***error in printing')
+            pass
 
 cursor.close()
 conn.close()
