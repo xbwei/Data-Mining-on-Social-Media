@@ -35,7 +35,7 @@ client = MongoClient()
 db = client.tweet_db
 
 tweet_collection = db.tweet_collection
-
+tweet_collection.create_index([("id", pymongo.ASCENDING)],unique = True)
 
 '''
 define query in REST API
@@ -43,7 +43,7 @@ define query in REST API
  
 count = 100
 
-locations = "-84.56,33.62,50mi"
+geocode = "-84.56,33.62,50mi"
 
  
 q = "election"
@@ -53,13 +53,16 @@ q = "election"
 fetch data
 '''
   
-# search_results = twitter_api.search.tweets(q=q, count=count,locations=locations)
+# search_results = twitter_api.search.tweets(q=q, count=count,geocode=geocode)
 #     
 # statuses = search_results["statuses"]
 #      
 #          
 # for statuse in statuses:
-#     tweet_collection.insert(statuse)
+#    try:
+#        tweet_collection.insert(statuse)
+#    except:
+#        pass
 #    
 # print (len(statuses))
 
