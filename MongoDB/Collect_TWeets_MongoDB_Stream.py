@@ -40,7 +40,7 @@ client = MongoClient()
 db = client.tweet_db
 
 tweet_collection = db.tweet_collection
-
+tweet_collection.create_index([("id", pymongo.ASCENDING)],unique = True)
 
 '''
 define query in Stream API
