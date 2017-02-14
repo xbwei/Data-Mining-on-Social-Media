@@ -6,36 +6,23 @@ Created on Oct 19, 2016
 '''
 
 
-import pymongo
-from pymongo import MongoClient
-
-import urllib
 from urllib import request
 import json
+from pprint import pprint
 
-client = MongoClient()
 
-db = client.db_demo 
-
-collection_demo = db.collection_demo
-
-website_list = [] # place your list of website urls, e.g., http://www.cnn.com
+website_list = ['http://www.jmu.edu'] # place your list of website urls, e.g., http://jmu.edu
  
 for website in website_list:
-    url_str = 'https://graph.facebook.com/'+website
+    url_str = 'https://graph.facebook.com/'+website # create the url for facebook graph api
    
-    response = request.urlopen(url_str)
+    response = request.urlopen(url_str) # read the reponse into computer
 
-    html_str = response.read().decode("utf-8") 
+    html_str = response.read().decode("utf-8") # convert the reponse into string
 
-
-    json_data = json.loads(html_str)
-    collection_demo.insert(json_data)
-   
-   
+    json_data = json.loads(html_str) # convert the string into json
+    pprint (json_data) 
     
-
-
-cursor = collection_demo.find()
-for document in cursor:
-    print (document)
+    '''
+    do something here
+    '''
