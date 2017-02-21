@@ -58,8 +58,10 @@ fetch data
 #   
 #     def on_status(self, status):
 #         print (status.id_str)
-#         tweet_collection.insert(status._json)
-#   
+#         try:
+#           tweet_collection.insert(status._json)\
+#         except:
+#           pass
 #   
 #     def on_error(self, status_code):
 #         if status_code == 420:
