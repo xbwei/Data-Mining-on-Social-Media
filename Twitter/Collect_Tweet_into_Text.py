@@ -6,6 +6,7 @@ www.lbsocial.net
 '''
 
 import twitter
+from pprint import pprint
 
 '''
 OAuth
@@ -44,7 +45,7 @@ write data into a text file
 with open('tweet.txt', 'ba') as outfile:
     for statuse in statuses:
         try:
-            print (statuse['text'].encode('utf-8'))
+            pprint(statuse)
             outfile.write(statuse['text'].encode('utf-8'))
         except:
             pass
