@@ -4,6 +4,7 @@ Created on Apr 3, 2017
 @author: Xuebin Wei
 www.lbsocial.net
 Extract texts from major news media webpages 
+Very rough extraction
 '''
 from bs4 import BeautifulSoup
 import urllib.request
