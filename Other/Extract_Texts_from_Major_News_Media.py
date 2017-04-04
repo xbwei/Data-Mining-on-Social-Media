@@ -42,20 +42,6 @@ for any webpages, extract all the visible texts
 #             outfile.write(text.encode('utf-8'))
 #         except:
 #             pass
-
-'''
-Extract text from JMU news
-'''
-# html = urllib.request.urlopen('https://www.jmu.edu/news/president/2017/03-mvs-preview-mary-ellen-callahan.shtml') # fill in the url
-#  
-# soup = BeautifulSoup(html.read(), 'html.parser')
-# print (soup.title.text)
-# for div_region in soup.find_all('div', id = 'defaultregion' ):
-# #     print (div_region)
-#     for div_gripdpad in div_region.find_all('div', class_ ='gridpad'):
-# #         print (div_gripdpad)
-#         for p in div_gripdpad.find_all('p'):
-#             print (p.text)
             
             
 '''
