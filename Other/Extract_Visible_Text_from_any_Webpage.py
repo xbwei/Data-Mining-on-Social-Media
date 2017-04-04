@@ -3,7 +3,7 @@ Created on Apr 3, 2017
 
 @author: Xuebin Wei
 www.lbsocial.net
-Extract texts from any webpages 
+Extract all visible texts from any webpages 
 '''
 from bs4 import BeautifulSoup
 import urllib.request
