@@ -22,7 +22,3 @@ for website in website_list:
 
     json_data = json.loads(html_str) # convert the string into json
     pprint (json_data) 
-    
-    '''
-    do something here
-    '''
