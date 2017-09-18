@@ -104,4 +104,11 @@ collection_demo.create_index([
                                ("share.share_count", pymongo.ASCENDING)
                                ])
 '''                               
-    
+'''
+# text index
+collection_demo.create_index([("text",pymongo.TEXT)], default_language='english')
+cursor = collection_demo.find({"$text":{"$search":key_word}})
+
+
+
+'''
