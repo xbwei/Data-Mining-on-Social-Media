@@ -15,9 +15,9 @@ conn = pyodbc.connect(odbc_conn_str) # establish a database connection
 
 cursor = conn.cursor() # create a cursor
 
-sql_insert_statement = '' # edit the SQL statement that want to execute
+sql_modify_statement = '' # edit the SQL statement that want to execute
 
-cursor.execute(sql_insert_statement) # execute the SQL statement
+cursor.execute(sql_modify_statement) # execute the SQL statement
 cursor.commit() # let the database commit the changes in the tables
 
 cursor.close() # close the cursor
