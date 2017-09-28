@@ -13,7 +13,7 @@ from urllib import request
 '''
 Connect to Access
 '''
-db_file = "C:\\Project\\JMU\\2017 Fall\\IA340\week6\\professor.accdb" #define the location of your Access file
+db_file = "" #define the location of your Access file
 
 odbc_conn_str = 'DRIVER={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=%s' %(db_file) # define the odbc connection parameter
 
