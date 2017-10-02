@@ -47,24 +47,53 @@ geocode = "-84.56,33.62,50mi"
 
  
 q = "election"
- 
- 
+  
 '''
 fetch data
 '''
   
-# search_results = twitter_api.search.tweets(q=q, count=count,geocode=geocode)
-#     
-# statuses = search_results["statuses"]
-#      
-#          
-# for statuse in statuses:
-#    try:
-#        tweet_collection.insert(statuse)
-#    except:
-#        pass
-#    
-# print (len(statuses))
+search_results = twitter_api.search.tweets( count=count,q=q)
+# pprint(search_results['search_metadata'])
+         
+statuses = search_results["statuses"]
+
+
+since_id_new = statuses[-1]['id']
+
+for statuse in statuses:
+   
+    try:
+        tweet_collection.insert(statuse)
+#         pprint(statuse['created_at'])
+  
+    except:
+        pass
+        
+
+
+'''
+continue fetching previous data with the same query
+'''   
+since_id_old = 0
+while(since_id_new != since_id_old):
+#     pprint(search_results['search_metadata'])
+    since_id_old = since_id_new
+    search_results = twitter_api.search.tweets( count=count,q=q, max_id= since_id_new)
+    statuses = search_results["statuses"]
+
+    since_id_new = statuses[-1]['id']
+
+    for statuse in statuses:
+                
+        try:
+            tweet_collection.insert(statuse)
+#             pprint(statuse['created_at'])
+        except:
+            pass
+#         
+ 
+ 
+ 
 
 '''
 query collected data in MongoDB
