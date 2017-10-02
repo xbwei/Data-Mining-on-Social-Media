@@ -7,18 +7,13 @@ Created on Oct 25, 2016
 import pymongo
 from pymongo import MongoClient
 import json
-
 import tweepy
-#override tweepy.StreamListener to add logic to on_status
-
 from pprint import pprint
 import sys
-
 
 '''
 OAUTH
 '''
-
 CONSUMER_KEY      = "" # fill your oauth
 CONSUMER_SECRET   = "" # fill your oauth
 OAUTH_TOKEN       = "" # fill your oauth
@@ -29,18 +24,14 @@ auth.set_access_token(OAUTH_TOKEN, OATH_TOKEN_SECRET)
 
 api = tweepy.API(auth)
 
-
 '''
 connect mongodb database
 '''
-      
 
 client = MongoClient()
-
 db = client.tweet_db
-
 tweet_collection = db.tweet_collection
-tweet_collection.create_index([("id", pymongo.ASCENDING)],unique = True)
+tweet_collection.create_index([("id", pymongo.ASCENDING)],unique = True) # make sure the collected tweets are unique 
 
 '''
 define query in Stream API
