@@ -8,10 +8,8 @@ Created on Oct 21, 2016
 import pymongo
 from pymongo import MongoClient
 import json
-
 import twitter
 from pprint import pprint
-
 
 '''
 OAUTH
@@ -25,17 +23,13 @@ OATH_TOKEN_SECRET = "" # fill your oauth
 auth = twitter.oauth.OAuth(OAUTH_TOKEN,OATH_TOKEN_SECRET,CONSUMER_KEY,CONSUMER_SECRET)
 twitter_api = twitter.Twitter(auth=auth)
 
-
 '''
 connect mongodb database
 '''
-
 client = MongoClient()
-
 db = client.tweet_db
-
 tweet_collection = db.tweet_collection
-tweet_collection.create_index([("id", pymongo.ASCENDING)],unique = True)
+tweet_collection.create_index([("id", pymongo.ASCENDING)],unique = True) # make sure the collected tweets are unique
 
 '''
 define query in REST API
