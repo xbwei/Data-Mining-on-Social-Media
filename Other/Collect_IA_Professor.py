@@ -1,72 +1,56 @@
 '''
 Created on Sep 25, 2017
 
-@author: weixx
+@author: xuebin Wei
+@website: www.lbsocial.net
+Collect each JMU IA faculty members' info into an Access database.
 '''
 import pyodbc  # using the pyodbc library 
 from bs4 import BeautifulSoup
 from urllib import request
 
-# import requests
-
-
 '''
 Connect to Access
 '''
-db_file = "" #define the location of your Access file
-
+db_file = "C:\\Project\\JMU\\2017 Fall\\IA340\week6\\professor.accdb" #define the location of your Access file
 odbc_conn_str = 'DRIVER={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=%s' %(db_file) # define the odbc connection parameter
-
 conn = pyodbc.connect(odbc_conn_str) # establish a database connection
-
 cursor = conn.cursor() # create a cursor
 
 '''
-use urllib.request to request html data
+read data into beautifulsoup
 '''
-
-# url_str = 'https://www.jmu.edu/ia/people/index.shtml' # fill in  url 
-# response = request.urlopen(url_str)
-# html_data = response.read()
-
-# print (html_data)
-
-'''
-use requests to request html data
-'''
-
-# response = requests.get(url_str)
-# 
-# print (response.content)
-# print (response.headers)
+url_str = 'https://www.jmu.edu/ia/people/index.shtml' # fill in  url 
+response = request.urlopen(url_str)
+html_data = response.read()
+soup = BeautifulSoup(html_data,"html.parser")
+# print (soup.encode("utf-8","ignore"))
 
 '''
-Use bs4 to parse webpages
+find the div tag contains the p_url and p_name
 '''
-# 
-# soup = BeautifulSoup(html_data,"html.parser")
-# # print (soup.encode("utf-8","ignore"))
-#  
-# div_yui3_s = soup.find_all('div', class_ = 'yui3-u-1-4')
-# for div_yui3 in div_yui3_s:
-#     div_gridpads = div_yui3.find_all('div', class_ = 'gridpad')
-#     for div_gridpad in div_gridpads:
-#         div_rwdwys = div_gridpad.find_all('div', class_ = 'rwdwysiwyg profilespace')
-#         for div_rwdwy in div_rwdwys:
-#             p_url =div_rwdwy.a.get('href').replace('../..','https://www.jmu.edu')
-#             p_name = div_rwdwy.p.text.strip()
-#             
-#             sql_statement = "insert into urls (p_name,p_url) values('{}','{}')".format(p_name,p_url)
-#             
-#             try:
-#                 cursor.execute(sql_statement)
-#             except:
-#                 pass
-#             cursor.commit()
-#             
-# cursor.close()
-# conn.close()
-#            
+div_yui3_s = soup.find_all('div', class_ = 'yui3-u-1-4')
+for div_yui3 in div_yui3_s:
+    div_gridpads = div_yui3.find_all('div', class_ = 'gridpad')
+    for div_gridpad in div_gridpads:
+        div_rwdwys = div_gridpad.find_all('div', class_ = 'rwdwysiwyg profilespace')
+        for div_rwdwy in div_rwdwys:
+            p_url =div_rwdwy.a.get('href').replace('../..','https://www.jmu.edu')
+            p_name = div_rwdwy.p.text.strip()
+            
+#             print (p_url)
+#             print (p_name)
+            
+            '''
+            insert the p_name and p_url into urls table
+            '''
+            sql_statement = "insert into urls (p_name,p_url) values('{}','{}')".format(p_name,p_url)
+            try:
+                cursor.execute(sql_statement)
+            except:
+                pass
+            cursor.commit()
+            
 
 '''
 collect individual professor's info
