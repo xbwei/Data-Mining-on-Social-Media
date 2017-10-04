@@ -67,6 +67,7 @@ for statuse in statuses:
 
 '''
 continue fetching previous data with the same query
+YOU WILL REACH YOUR RATE LIMIT VERY FAST
 '''   
 since_id_old = 0
 while(since_id_new != since_id_old):
