@@ -3,7 +3,7 @@ Created on Sep 25, 2017
 
 @author: xuebin Wei
 @website: www.lbsocial.net
-Collect each JMU IA faculty members' info into an Access database.
+Collect each JMU IA faculty member's info into an Access database.
 '''
 import pyodbc  # using the pyodbc library 
 from bs4 import BeautifulSoup
