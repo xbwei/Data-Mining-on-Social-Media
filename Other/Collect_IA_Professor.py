@@ -34,12 +34,14 @@ for div_yui3 in div_yui3_s:
     div_gridpads = div_yui3.find_all('div', class_ = 'gridpad')
     for div_gridpad in div_gridpads:
         div_rwdwys = div_gridpad.find_all('div', class_ = 'rwdwysiwyg profilespace')
-        for div_rwdwy in div_rwdwys:
-            p_url =div_rwdwy.a.get('href').replace('../..','https://www.jmu.edu')
-            p_name = div_rwdwy.p.text.strip()
+        for div_rwdwy in div_rwdwys:        
+            p_url =div_rwdwy.a.get('href')
+            p_url = p_url.replace('../..','https://www.jmu.edu')
+            p_name = div_rwdwy.p.text
+            p_name = p_name.strip()
             
-#             print (p_url)
-#             print (p_name)
+            print (p_url)
+            print (p_name)
             
             '''
             insert the p_name and p_url into urls table
