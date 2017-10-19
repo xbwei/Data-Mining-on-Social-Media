@@ -1,5 +1,7 @@
 <h1>Extract Social Media Data from Twitter and Facebook</h1>
 
+Video tutorial: https://www.youtube.com/channel/UCwtRYX-OsUj4VHLic2XQYog/featured
+
 <ul>
 
 <li>[Twitter] get tweets by defined query or specific users, and store collected tweets in dbf table or postgre sql database. Extract geo-tagged locations, mentioned users, retweeted users and replying users into separate fields.</li>
