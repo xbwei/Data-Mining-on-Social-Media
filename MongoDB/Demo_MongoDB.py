@@ -36,7 +36,7 @@ cursor = collection_demo.find()
 for document in cursor:
     print (document)
 
-''' 
+
 # sort data
 cursor = collection_demo.find().sort("share.share_count", pymongo.DESCENDING)
                                      
@@ -44,9 +44,7 @@ cursor = collection_demo.find().sort("share.share_count", pymongo.DESCENDING)
 for document in cursor:
     print (document)
 
-'''
 
-''' 
 # query data
 cursor = collection_demo.find({"share.share_count":{"$gt":5000}})
                                      
@@ -54,10 +52,9 @@ cursor = collection_demo.find({"share.share_count":{"$gt":5000}})
 for document in cursor:
     print (document)
 
-'''
 
 
-'''
+
 # update data
 collection_demo.update_one(
                             {"id":"http://www.uga.edu"},
@@ -68,10 +65,7 @@ cursor = collection_demo.find({"id":"http://www.uga.edu"})
 for document in cursor:
     print (document)
 
-'''
 
-
-'''
 # delete data
 
 
@@ -81,9 +75,7 @@ cursor = collection_demo.find()
 for document in cursor:
     print (document)
 
-'''
 
-'''
 # aggregate data
 
 cursor = collection_demo.aggregate(
@@ -94,20 +86,32 @@ cursor = collection_demo.aggregate(
                                      
 for document in cursor:
     print (document)
-'''
+  
+  
+# aggregate hashtag
 
-'''
+pipeline = [
+{"$unwind": "$entities.hashtags"},
+{"$group": {"_id": "$entities.hashtags.text", "count": {"$sum": 1}}},
+{"$sort": SON([("count", -1), ("_id", -1)])}]
+
+hashtag_agg_list = list(db.tweet_collection.aggregate(pipeline))
+for hashtag_agg in hashtag_agg_list:
+    try:
+        print (hashtag_agg)
+    except:
+        pass
+
 # create index
 
 collection_demo.create_index([
                                ("share.comment_count", pymongo.ASCENDING)
                                ])
-'''                               
-'''
+
 # text index
 collection_demo.create_index([("text",pymongo.TEXT)], default_language='english')
 cursor = collection_demo.find({"$text":{"$search":key_word}})
 
 
 
-'''
+
