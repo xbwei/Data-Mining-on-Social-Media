@@ -75,20 +75,8 @@ cursor = collection_demo.find()
 for document in cursor:
     print (document)
 
-
-# aggregate data
-
-cursor = collection_demo.aggregate(
-                                    [{"$group":
-                                    {"_id":"$og_object.type",
-                                     "count":{"$sum":1}}}]
-                                    )
-                                     
-for document in cursor:
-    print (document)
   
-  
-# aggregate hashtag
+# aggregate 
 
 from bson.son import SON
 pipeline = [
