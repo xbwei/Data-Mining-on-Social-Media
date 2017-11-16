@@ -90,6 +90,7 @@ for document in cursor:
   
 # aggregate hashtag
 
+from bson.son import SON
 pipeline = [
 {"$unwind": "$entities.hashtags"},
 {"$group": {"_id": "$entities.hashtags.text", "count": {"$sum": 1}}},
