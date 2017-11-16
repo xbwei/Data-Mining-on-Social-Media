@@ -100,8 +100,7 @@ for document in cursor:
 # create index
 
 collection_demo.create_index([
-                               ("share.comment_count", pymongo.ASCENDING),
-                               ("share.share_count", pymongo.ASCENDING)
+                               ("share.comment_count", pymongo.ASCENDING)
                                ])
 '''                               
 '''
