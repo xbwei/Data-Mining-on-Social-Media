@@ -1,0 +1,30 @@
+'''
+Created on Jan 29, 2018
+
+@author: Xuebin Wei
+www.lbsocial.net
+
+this python code collect json data from https://www.census.gov/data/developers/data-sets/acs-1year.html
+definition of variables: https://api.census.gov/data/2016/acs/acs1/variables.html
+
+'''
+
+
+from urllib import request
+import json
+from pprint import pprint
+
+
+census_api_key = '' #get your key from https://api.census.gov/data/key_signup.html
+
+
+url_str = 'https://api.census.gov/data/2016/acs/acs5?get=B00001_001E,NAME&for=county:*&in=state:51&key='+census_api_key # create the url of your census data
+
+response = request.urlopen(url_str) # read the response into computer
+
+html_str = response.read().decode("utf-8") # convert the response into string
+if (html_str):
+    json_data = json.loads(html_str) # convert the string into json
+    print (json_data[0])
+    for v1,name,state,county in json_data[1:]:
+print (v1,name,state,county )
