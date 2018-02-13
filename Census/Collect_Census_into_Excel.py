@@ -42,4 +42,4 @@ if (html_str):
         sheet_test.write(i,4,cl5)
         i = i+1
           
-book.save('')#define the location of your excel file
+book.save()#define the location of your excel file
