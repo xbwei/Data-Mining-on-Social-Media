@@ -4,11 +4,12 @@ Created on Jan 29, 2018
 @author: Xuebin Wei
 www.lbsocial.net
 
-this python code collect json data from https://www.census.gov/data/developers/data-sets/acs-1year.html
+this python code collects json data from https://www.census.gov/data/developers/data-sets/acs-1year.html
 example of urls: https://api.census.gov/data/2016/acs/acs1.html
 definition of variables: https://api.census.gov/data/2016/acs/acs1/variables.html
 census state code:https://www.census.gov/geo/reference/ansi_statetables.html
 census cunty code:https://www.census.gov/geo/reference/codes/cou.html
+get your key from https://api.census.gov/data/key_signup.html
 
 '''
 
