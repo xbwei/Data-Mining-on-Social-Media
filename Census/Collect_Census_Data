@@ -27,4 +27,4 @@ if (html_str):
     json_data = json.loads(html_str) # convert the string into json
     print (json_data[0])
     for v1,name,state,county in json_data[1:]:
-print (v1,name,state,county )
+        print (v1,name,state,county )
