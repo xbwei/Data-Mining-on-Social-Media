@@ -39,8 +39,8 @@ if (html_str):
         cl1, cl2, cl3, cl4,cl5 =row
  
         #write format (row_num, col_num, value)
-        sheet_test.write(i,0,cl1)
-        sheet_test.write(i,1,cl2)
+        sheet_test.write(i,0,float(cl1))
+        sheet_test.write(i,1,float(cl2))
         sheet_test.write(i,2,cl3)
         sheet_test.write(i,3,cl4)
         sheet_test.write(i,4,cl5)
