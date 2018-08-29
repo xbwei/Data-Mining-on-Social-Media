@@ -1,4 +1,5 @@
-# Extract Social Media Data from Twitter and Facebook   [![Build Status](https://travis-ci.org/xbwei/Data-Mining-on-Social-Media.svg?branch=master)](https://travis-ci.org/xbwei/Data-Mining-on-Social-Media)
+# Extract Social Media Data from Twitter and Facebook  
+[![Build Status](https://travis-ci.org/xbwei/Data-Mining-on-Social-Media.svg?branch=master)](https://travis-ci.org/xbwei/Data-Mining-on-Social-Media)
 
 Video tutorial: https://www.youtube.com/channel/UCwtRYX-OsUj4VHLic2XQYog/featured
 
