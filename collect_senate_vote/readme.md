@@ -7,9 +7,13 @@ The [collect_vote.py](./collect_vote.py) can collect votes from the [Senate](htt
 2. Defin the location of the database in `db_file = ''`
 
 ## Sample Query
-+ A [sample](./query.sql) SQL is also provided.
+1. A [sample](./query.sql) SQL is also provided.
+2. ![example of query](./query_result.PNG)
 
 ## Database
+Here is an example of collected data:
+![collected data](./collected_data.png)
+
 The python code uses an Access table. The tables include:
 1. ![senator table](./vote_table.PNG )
 2. ![vote table](./vote_table.PNG )
