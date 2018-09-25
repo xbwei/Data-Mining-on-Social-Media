@@ -15,18 +15,18 @@ A [sample](./query.sql) SQL is also provided.
 ## Database
 Here is an example of collected data:
 
-<img src="./collected_data.PNG" width="300">
+<img src="./collected_data.PNG" width="400">
 
 
 The python code uses an Access table. The tables include:
 
-<img src="./senator_table.PNG" width="200">
+<img src="./senator_table.PNG" width="300">
 
-<img src="./vote_table.PNG" width="200">
+<img src="./vote_table.PNG" width="300">
 
 
 The relationship is defined as:
 
-<img src="./relationship.PNG" width="200">
+<img src="./relationship.PNG" width="300">
 
 
