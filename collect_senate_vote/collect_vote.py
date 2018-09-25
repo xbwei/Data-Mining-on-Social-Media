@@ -49,9 +49,9 @@ if vote_number and vote_date:
                     party =party
                     state =state[:-1]
                     
-                    sql_insert_snator = "insert into senator(sname,party,state) values('{}','{}','{}')".format(name,party,state)
+                    sql_insert_senator = "insert into senator(sname,party,state) values('{}','{}','{}')".format(name,party,state)
                     try:
-                        cursor.execute(sql_insert_snator)
+                        cursor.execute(sql_insert_senator)
                     except:
                         pass
                          
