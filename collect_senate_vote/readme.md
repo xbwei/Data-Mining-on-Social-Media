@@ -8,10 +8,10 @@ The [collect_vote.py](https://github.com/xbwei/Data-Mining-on-Social-Media/blob/
 
 ## Database
 The python code uses an Access table. The tables include:
-1. ![senator table](https://github.com/xbwei/Data-Mining-on-Social-Media/blob/master/collect_senate_vote/vote_table.PNG =100x20)
-2. ![vote table](https://github.com/xbwei/Data-Mining-on-Social-Media/blob/master/collect_senate_vote/vote_table.PNG =100x20)
+1. ![senator table](https://github.com/xbwei/Data-Mining-on-Social-Media/blob/master/collect_senate_vote/vote_table.PNG=100x20)
+2. ![vote table](https://github.com/xbwei/Data-Mining-on-Social-Media/blob/master/collect_senate_vote/vote_table.PNG=100x20)
 
 The relationship is defined as:
 
-3. ![relation ship](https://github.com/xbwei/Data-Mining-on-Social-Media/blob/master/collect_senate_vote/relationship.PNG =100x20)
+3. ![relation ship](https://github.com/xbwei/Data-Mining-on-Social-Media/blob/master/collect_senate_vote/relationship.PNG=100x20)
 
