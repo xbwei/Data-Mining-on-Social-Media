@@ -17,8 +17,6 @@ response = urllib.request.urlopen(url_str)
 html_data = response.read()
 
 soup = BeautifulSoup(html_data,'html.parser')
-# print (soup)
-
 
 db_file = '' #define the location of your Access file
 odbc_conn_str = 'DRIVER={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=%s' %(db_file) # define the odbc connection parameter
