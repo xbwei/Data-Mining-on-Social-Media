@@ -8,6 +8,7 @@ The [collect_vote.py](./collect_vote.py) can collect votes from the [Senate](htt
 
 ## Sample Query
 1. A [sample](./query.sql) SQL is also provided.
+
 ![example of query](./query_result.PNG)
 
 ## Database
