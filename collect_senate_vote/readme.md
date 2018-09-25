@@ -9,11 +9,13 @@ The [collect_vote.py](./collect_vote.py) can collect votes from the [Senate](htt
 ## Sample Query
 A [sample](./query.sql) SQL is  provided.
 
+Here is an example of the query:
+
 <img src="./query_result.PNG" width="200">
 
 
 ## Database
-Here is an example of collected data:
+Here is an example of the collected data:
 
 <img src="./collected_data.PNG" width="400">
 
