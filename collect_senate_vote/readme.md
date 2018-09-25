@@ -8,11 +8,11 @@ The [collect_vote.py](./collect_vote.py) can collect votes from the [Senate](htt
 
 ## Sample Query
 1. A [sample](./query.sql) SQL is also provided.
-2. ![example of query](./query_result.PNG)
+![example of query](./query_result.PNG)
 
 ## Database
 Here is an example of collected data:
-![collected data](./collected_data.png)
+![collected data](./collected_data.PNG)
 
 The python code uses an Access table. The tables include:
 1. ![senator table](./vote_table.PNG )
