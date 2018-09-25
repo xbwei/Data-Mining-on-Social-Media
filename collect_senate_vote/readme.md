@@ -19,9 +19,9 @@ Here is an example of collected data:
 
 
 The python code uses an Access table. The tables include:
-1. A senator table:
+1.A senator table:
 <img src="./senator_table.PNG" width="300">
-2. A vote table:
+2.A vote table:
 <img src="./vote_table.PNG" width="300">
 
 
