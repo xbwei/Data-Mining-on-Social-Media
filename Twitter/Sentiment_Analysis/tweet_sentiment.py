@@ -4,6 +4,10 @@ Sentiment Analysis on Collected Tweets in MongoDB
 @author: Xuebin Wei
 @gmail: weixuebin@gmail.com
 website: www.lbsocial.net
+
+1.retrive data from mongodb
+2.calculate sentiments of tweets with TextBlob
+3.save the results in an Access table.
 '''
 import pymongo
 from pymongo import MongoClient
@@ -15,7 +19,7 @@ import pyodbc  # using the pyodbc library
 '''
 coonect access
 '''
-db_file = r'C:\Project\JMU\2018 Fall\IA340\week12\tweet_sentiment.accdb' #define the location of your Access file
+db_file = r'' #define the location of your Access file
 
 odbc_conn_str = 'DRIVER={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=%s' %(db_file) # define the odbc connection parameter
 
