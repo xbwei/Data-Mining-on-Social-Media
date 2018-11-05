@@ -1,4 +1,4 @@
-# A Simple of Sentiment Analysis on Twitter Data
+# A Simple Sentiment Analysis on Twitter Data
 The [tweet_sentiment.py](./tweet_sentiment.py) calculate the sentiment of your collected tweets in MongoDB with the [TextBlob](https://textblob.readthedocs.io/en/dev/) python library, and save the results in an Access table.
 ## Code Parameter
 1. Define the access location in `db_file = ''`, e..g, `db_file = r'C:\Project\JMU\2018 Fall\IA340\week12\tweet_sentiment.accdb'`
