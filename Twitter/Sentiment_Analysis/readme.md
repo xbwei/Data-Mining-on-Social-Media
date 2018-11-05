@@ -8,9 +8,9 @@ The [tweet_sentiment.py](./tweet_sentiment.py) calculate the sentiment of your c
 ## Database
 Here is an example of the table in Access:
 
-<img src="./access_table.PNG" width="400">
+<img src="./access_table.PNG" width="600">
 
 Here is an example of the result in Access:
 
-<img src="./result.PNG" width="400">
+<img src="./result.PNG" width="600">
 
