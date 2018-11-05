@@ -10,3 +10,7 @@ Here is an example of the table in Access:
 
 <img src="./access_table.PNG" width="400">
 
+Here is an example of the result in Access:
+
+<img src="./result.PNG" width="400">
+
