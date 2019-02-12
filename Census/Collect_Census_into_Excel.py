@@ -24,7 +24,7 @@ import xlwt
 census_api_key = '' #get your key from https://api.census.gov/data/key_signup.html
  
  
-url_str = 'https://api.census.gov/data/2016/acs/acs5?get=B00001_001E,B02001_002E,NAME&for=county:*&in=state:51&key='+census_api_key # create the url of your census data
+url_str = 'https://api.census.gov/data/2016/acs/acs5?get=B01001_001E,B01001_002E,NAME&for=county:*&in=state:51&key='+census_api_key # create the url of your census data
  
 response = request.urlopen(url_str) # read the response into computer
  
