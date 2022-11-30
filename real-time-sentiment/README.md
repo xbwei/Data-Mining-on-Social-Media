@@ -7,22 +7,22 @@
 2.	Create the first Lambda function
     1.	Name: collect_tweets
     2.	Runtime: python 3.9
-    2.	Execution role: the Exiting LabRole
-    2.	Leave everything else as default, and create the function
-    2.	Upload the collect_tweets.zip
-    2.	In Configuration/General configuration:
-        1.	Memory: 500 MB
-        2.	Ephemeral storage: 1000 MB
-        3.	Timeout: 1 min
-2.7.	In Configuration/Environment variables, create the following variables and provide corresponding values:
-•	api_key
-•	api_secret
-•	access_token
-•	access_secret
-•	mongodb_connect
-•	database_name
-•	geocode
-•	q_parameter
+    3.	Execution role: the Exiting LabRole
+    4.	Leave everything else as default, and create the function
+    5.	Upload the collect_tweets.zip
+    6.	In Configuration/General configuration:
+      1. Memory: 500 MB
+      2. Ephemeral storage: 1000 MB
+      3. Timeout: 1 min
+    7.  In Configuration/Environment variables, create the following variables and provide corresponding values:
+      1. api_key
+      2. api_secret
+    •	access_token
+    •	access_secret
+    •	mongodb_connect
+    •	database_name
+    •	geocode
+    •	q_parameter
 2.8.	In Test, create a new event to test the function. 
 2.9.	If the test is successful, add a trigger:
 •	Source: EventBridge
