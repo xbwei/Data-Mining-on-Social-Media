@@ -1,2 +1,2 @@
 
-# A Real Time Twitter Sentiment Analysis
+# A Real-Time Twitter Sentiment Analysis
