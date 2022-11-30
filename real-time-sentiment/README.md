@@ -11,11 +11,11 @@
     4.Leave everything else as default, and create the function
     5.Upload the collect_tweets.zip
     6.In Configuration/General configuration:
-       1. Memory: 500 MB
-       2. Ephemeral storage: 1000 MB
-       3. Timeout: 1 min
+         1. Memory: 500 MB
+         2. Ephemeral storage: 1000 MB
+         3. Timeout: 1 min
     7.  In Configuration/Environment variables, create the following variables and provide corresponding values:
-      1. api_key
+       1. api_key
       2. api_secret
     •	access_token
     •	access_secret
