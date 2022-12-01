@@ -3,9 +3,9 @@
 
 
 ## Create Lambda functions
-1.      Open AWS Console. Search and open AWS Lambda Service.
+1.Open AWS Console. Search and open AWS Lambda Service.
 
-2.      Create the first Lambda function
+2. Create the first Lambda function
 
 2.1.   Name: collect_tweets
 
