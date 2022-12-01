@@ -1,5 +1,5 @@
 
-# A serverless dashboard to analyze and visualize social media data in real-time
+# A serverless dashboard to analyze and visualize Twitter data in real-time
 
 ## Create Lambda functions
 
