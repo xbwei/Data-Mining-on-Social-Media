@@ -56,3 +56,4 @@
     4.	A bar chart to show the top 10 active Twitter users
     5.	A table to show the Twitter texts, number of favorites, positive scores, and negative scores. 
 
+![image](https://github.com/xbwei/Data-Mining-on-Social-Media/blob/master/real-time-sentiment/Screenshot%202022-12-01%20152214.png)
