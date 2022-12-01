@@ -7,13 +7,13 @@
 2.	Create the first Lambda function
     1.	Name: `collect_tweets`
     2.	Runtime: `python 3.9`
-    4.	Leave everything else as default, and create the function
-    5.	Upload the [collect_tweets.zip](https://github.com/xbwei/Data-Mining-on-Social-Media/blob/master/real-time-sentiment/collect_tweets.zip)
-    6.	In Configuration/General configuration:
+    3.	Leave everything else as default, and create the function
+    4.	Upload the [collect_tweets.zip](https://github.com/xbwei/Data-Mining-on-Social-Media/blob/master/real-time-sentiment/collect_tweets.zip)
+    5.	In Configuration/General configuration:
         - Memory: `500 MB`
         - Ephemeral storage: `1000 MB`
         - Timeout: `1 min`
-    7.	In Configuration/Environment variables, create the following variables and provide corresponding values:
+    6.	In Configuration/Environment variables, create the following variables and provide corresponding values:
         - `api_key`
         - `api_secret`
         - `access_token`
@@ -22,30 +22,29 @@
         - `database_name`
         - `geocode`
         - `q_parameter`
-    8.	In Test, create a new event to test the function. 
-    9.	If the test is successful, add a trigger:
-•	Source: EventBridge
-•	Create a new rule
-•	Name: every5min 
-•	Schedule expression: rate(5 minutes)
+    7.	In Test, create a new event to test the function. 
+    8.	If the test is successful, add a trigger:
+        - Source: `EventBridge`
+        - Create a new rule
+        - Name: `every5min`
+        - Schedule expression: `rate(5 minutes)`
 3.	Create the second Lambda function
-    1.	Name: sentiment_tweets
-    2.	Runtime: python 3.9
-    3.	Execution role: the Exiting LabRole
-    4.	Leave everything else as default, and create the function
-    5.	Upload the sentiment_tweets.zip
-    6.	In Configuration/General configuration:
-•	Memory: 500 MB
-•	Ephemeral storage: 1000 MB
-•	Timeout: 1 min
-    7.	In Configuration/Environment variables, create the following variables and provide corresponding values:
-•	mongodb_connect
-•	database_name
-•	lang
-    8.	In Test, create a new event to test the function. 
-    9.	If the test is successful, add a trigger:
-•	Source: EventBridge
-•	Use existing rule: every5min 
+    1.	Name: `sentiment_tweets`
+    2.	Runtime: `python 3.9`
+    3.	Leave everything else as default, and create the function
+    4.	Upload the [sentiment_tweets.zip](https://github.com/xbwei/Data-Mining-on-Social-Media/blob/master/real-time-sentiment/sentiment_tweets.zip)
+    5.	In Configuration/General configuration:
+        - Memory: `500 MB`
+        - Ephemeral storage: `1000 MB`
+        - Timeout: `1 min`
+    6.	In Configuration/Environment variables, create the following variables and provide corresponding values:
+        - `mongodb_connect`
+        - `database_name`
+        - `lang`
+    7.	In Test, create a new event to test the function. 
+    8.	If the test is successful, add a trigger:
+        - Source: `EventBridge`
+        - Use existing rule: `every5min`
 
 ## Create MongoDB dashboard
 
