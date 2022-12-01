@@ -7,7 +7,7 @@
 
 2. Create the first Lambda function
 
-2.1. Name: collect_tweets
+    2.1. Name: collect_tweets
 
 2.2. Runtime: python 3.9
 
