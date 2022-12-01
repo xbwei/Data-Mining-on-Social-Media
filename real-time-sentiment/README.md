@@ -46,7 +46,7 @@
         - Source: `EventBridge`
         - Use existing rule: `every5min`
 
-## Create MongoDB dashboard
+## Create a MongoDB Dashboard
 
 4.	Log in to the MongoDB website and find the final project database that contains the collected tweets. 
 5.	Open MongoDB Chart and add a dashboard. Use the final project database as the data resource. Create the following charts and add filters to all charts to show the data from the last 60 mins. 
