@@ -55,7 +55,7 @@
 
         Schedule expression: rate(5 minutes)
  
-    3. Create the second Lambda function
+   3. Create the second Lambda function
 
 3.1.   Name: sentiment_tweets
 
