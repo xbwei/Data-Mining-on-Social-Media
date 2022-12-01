@@ -5,11 +5,11 @@
 
 1.	Open AWS Console. Search and open AWS Lambda Service. 
 2.	Create the first Lambda function
-    1.	Name: collect_tweets
-    2.	Runtime: python 3.9
+    1.	Name: `collect_tweets`
+    2.	Runtime: `python 3.9`
     3.	Execution role: the Exiting LabRole
     4.	Leave everything else as default, and create the function
-    5.	Upload the collect_tweets.zip
+    5.	Upload the `collect_tweets.zip`
     6.	In Configuration/General configuration:
         - Memory: `500 MB`
         - Ephemeral storage: `1000 MB`
