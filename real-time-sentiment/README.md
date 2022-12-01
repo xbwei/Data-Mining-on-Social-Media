@@ -19,43 +19,43 @@
 
     2.6. In Configuration/General configuration:
 
-         Memory: 500 MB
+        Memory: 500 MB
 
-         Ephemeral storage: 1000 MB
+        Ephemeral storage: 1000 MB
 
-         Timeout: 1 min
+        Timeout: 1 min
 
     2.7. In Configuration/Environment variables, create the following variables and provide corresponding values:
 
-        + api_key
+        api_key
 
-·         api_secret
+        api_secret
 
-·         access_token
+        access_token
 
-·         access_secret
+        access_secret
 
-·         mongodb_connect
+        mongodb_connect
 
-·         database_name
+        database_name
 
-·         geocode
+        geocode
 
-·         q_parameter
+        q_parameter
 
-2.8.   In Test, create a new event to test the function.
+    2.8. In Test, create a new event to test the function.
 
-2.9.   If the test is successful, add a trigger:
+    2.9. If the test is successful, add a trigger:
+        
+        Source: EventBridge
 
-·         Source: EventBridge
+        Create a new rule
 
-·         Create a new rule
+        Name: every5min
 
-·         Name: every5min
-
-·         Schedule expression: rate(5 minutes)
-
-3.      Create the second Lambda function
+        Schedule expression: rate(5 minutes)
+ 
+    3. Create the second Lambda function
 
 3.1.   Name: sentiment_tweets
 
