@@ -19,11 +19,11 @@
 
     2.6. In Configuration/General configuration:
 
-        + Memory: 500 MB
+         Memory: 500 MB
 
-        + Ephemeral storage: 1000 MB
+         Ephemeral storage: 1000 MB
 
-        · Timeout: 1 min
+         Timeout: 1 min
 
     2.7. In Configuration/Environment variables, create the following variables and provide corresponding values:
 
