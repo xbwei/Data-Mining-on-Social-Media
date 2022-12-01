@@ -3,13 +3,13 @@
 
 
 ## Create Lambda functions
-1.Open AWS Console. Search and open AWS Lambda Service.
+1. Open AWS Console. Search and open AWS Lambda Service.
 
 2. Create the first Lambda function
 
-2.1.   Name: collect_tweets
+2.1. Name: collect_tweets
 
-2.2.   Runtime: python 3.9
+2.2. Runtime: python 3.9
 
 2.3.   Execution role: the Exiting LabRole
 
