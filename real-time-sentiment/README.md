@@ -3,50 +3,51 @@
 
 ## Create Lambda functions
 
-* Open AWS Console. Search and open AWS Lambda Service. 
-* Create the first Lambda function
-    o Name: collect_tweets
-    o Runtime: python 3.9
-    o Execution role: the Exiting LabRole
-    o Leave everything else as default, and create the function
-    o Upload the collect_tweets.zip
-    o In Configuration/General configuration:
-* Memory: 500 MB
-* Ephemeral storage: 1000 MB
-* Timeout: 1 min
-o In Configuration/Environment variables, create the following variables and provide corresponding values:
-* api_key
-* api_secret
-* access_token
-* access_secret
-* mongodb_connect
-* database_name
-* geocode
-* q_parameter
-o In Test, create a new event to test the function. 
-o If the test is successful, add a trigger:
-* Source: EventBridge
-* Create a new rule
-* Name: every5min 
-* Schedule expression: rate(5 minutes)
-* Create the second Lambda function
-o Name: sentiment_tweets
-o Runtime: python 3.9
-o Execution role: the Exiting LabRole
-o Leave everything else as default, and create the function
-o Upload the sentiment_tweets.zip
-o In Configuration/General configuration:
-* Memory: 500 MB
-* Ephemeral storage: 1000 MB
-* Timeout: 1 min
-o In Configuration/Environment variables, create the following variables and provide corresponding values:
-* mongodb_connect
-* database_name
-* lang
-o In Test, create a new event to test the function. 
-o If the test is successful, add a trigger:
-* Source: EventBridge
-* Use existing rule: every5min 
+1)	Open AWS Console. Search and open AWS Lambda Service. 
+2)	Create the first Lambda function
+a)	Name: collect_tweets
+b)	Runtime: python 3.9
+c)	Execution role: the Exiting LabRole
+d)	Leave everything else as default, and create the function
+e)	Upload the collect_tweets.zip
+f)	In Configuration/General configuration:
+i)	Memory: 500 MB
+ii)	Ephemeral storage: 1000 MB
+iii)	Timeout: 1 min
+g)	In Configuration/Environment variables, create the following variables and provide corresponding values:
+i)	api_key
+ii)	api_secret
+iii)	access_token
+iv)	access_secret
+v)	mongodb_connect
+vi)	database_name
+vii)	geocode
+viii)	q_parameter
+h)	In Test, create a new event to test the function. 
+i)	If the test is successful, add a trigger:
+i)	Source: EventBridge
+ii)	Create a new rule
+iii)	Name: every5min 
+iv)	Schedule expression: rate(5 minutes)
+3)	Create the second Lambda function
+a)	Name: sentiment_tweets
+b)	Runtime: python 3.9
+c)	Execution role: the Exiting LabRole
+d)	Leave everything else as default, and create the function
+e)	Upload the sentiment_tweets.zip
+f)	In Configuration/General configuration:
+i)	Memory: 500 MB
+ii)	Ephemeral storage: 1000 MB
+iii)	Timeout: 1 min
+g)	In Configuration/Environment variables, create the following variables and provide corresponding values:
+i)	mongodb_connect
+ii)	database_name
+iii)	lang
+h)	In Test, create a new event to test the function. 
+i)	If the test is successful, add a trigger:
+i)	Source: EventBridge
+ii)	Use existing rule: every5min 
+
 
 ## Create MongoDB dashboard
 
