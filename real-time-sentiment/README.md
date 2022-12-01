@@ -58,4 +58,4 @@
 
 ## Video Tutorial
 
-![image](https://github.com/xbwei/Data-Mining-on-Social-Media/blob/master/real-time-sentiment/Screenshot%202022-12-01%20152214.png)
+[![image](https://github.com/xbwei/Data-Mining-on-Social-Media/blob/master/real-time-sentiment/Screenshot%202022-12-01%20152214.png)](https://youtu.be/vg-v29OILxM)
