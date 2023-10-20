@@ -2,6 +2,7 @@
 The Twitter sample data is provided for educational purposes only. The Tweets are organized in JSON documents and separated by state. Two datasets are provided: the Election data and the Gun data.
 
 ## Election data
+The [Election data](https://github.com/xbwei/Data-Mining-on-Social-Media/tree/master/Twitter/tweet_sample_data/election) was collected in **Nov 2016** with the topic of the **presidential election**. 
 |State|Number of Documents|
 |----|----|
 | MI | 3047 |
@@ -57,6 +58,7 @@ The Twitter sample data is provided for educational purposes only. The Tweets ar
 | MD | 2630 |
 
 ## Gun control data
+The [Gun data](https://github.com/xbwei/Data-Mining-on-Social-Media/tree/master/Twitter/tweet_sample_data/gun) was collected between **Nov 2017** and **April 2018** with the topic of **gun control**. 
 |State|Number of Documents|
 |----|----|
 | TX | 5231 |
