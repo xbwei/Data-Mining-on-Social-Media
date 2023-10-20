@@ -1,8 +1,8 @@
 # Twitter Sample Data
-The Twitter sample data is provided for educational purposes only. The Tweets are organized in JSON documents and separated by state. Two datasets are provided: the Election data and the Gun data.
+The Twitter sample data is provided for educational purposes only. The Tweets are organized in JSON documents and separated by states. Two datasets are provided: the Election data and the Gun data.
 
 ## Election data
-The [Election data](https://github.com/xbwei/Data-Mining-on-Social-Media/tree/master/Twitter/tweet_sample_data/election) was collected in **Nov 2016** with the topic of the **presidential election**. 
+The [Election data](https://github.com/xbwei/Data-Mining-on-Social-Media/tree/master/Twitter/tweet_sample_data/election) was collected in **Nov 2016** with the topic of **presidential election**. 
 |State|Number of Documents|
 |----|----|
 | MI | 3047 |
