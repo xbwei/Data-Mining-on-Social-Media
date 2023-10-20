@@ -1,3 +1,6 @@
+# Twitter Sample Data
+The Twitter sample data is provided for educational purposes only. The Tweets are organized in JSON documents and separated by state. Two datasets are provided: the Election data and the Gun data.
+
 ## Election data
 |State|Number of Documents|
 |----|----|
